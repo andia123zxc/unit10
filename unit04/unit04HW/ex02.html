@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    	body{
+    		font-family: Arial;
+    		font-size: 12px;
+    	}
+    	*{
+    margin: 0;
+    padding: 0;
+}
+#menu{
+    width: 100%;
+    height: 40px;
+    background:#78b43d;
+}
+#menu>ul>li{
+    float: left;
+    list-style: none;
+    border-left: 1px solid white;
+    border-left: 1px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 40px;
+    position: relative;
+ 
+}
+#menu>ul>li a{
+    text-decoration: none;
+    color: white;
+}
+#menu>ul>li:hover{
+    background: #4a9c21;
+    cursor: pointer;
+}
+#menu>ul>li:hover  a{
+    color: #83d94a;
+}
+#menu>ul>li:hover #submenu{
+    display: block;
+}
+#menu>ul>li:hover #submenu li a{
+
+    color: black;
+}
+#submenu{
+    position: absolute;
+    top:30px;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+#submenu li{
+    clear: left;
+}
+#submenu li{
+    background: #83d94a;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid white;
+    width: 150px;
+}
+#submenu li:hover{
+    background: #78b43d !important;
+}
+#sumenu li:hover  a{
+    color:white !important;
+}
+.t{
+	color: white;
+	size: 12px;
+}
+.search{
+	color: white;
+	size: 12px; 
+}
+#menu>ul>li:hover #submenu2{
+    display: block;
+}
+#menu>ul>li:hover #submenu2 li a{
+
+    color: black;
+}
+#submenu2{
+    position: absolute;
+    top:30px;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+#submenu2 li{
+    clear: left;
+}
+#submenu2 li{
+    background: #83d94a;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid white;
+    width: 150px;
+}
+#submenu2 li:hover{
+    background: #78b43d !important;
+}
+#submenu2 li:hover  a{
+    color:black !important;
+}
+#submenu2>ul>li:hover #submenu3{
+	display: block;
+}
+#submenu2>ul>li:hover #submenu3 li a{
+	color: black;
+}
+#submenu3{
+	 position: absolute;
+    top:30px;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+#submenu3 li{
+     clear: left;
+}
+#submenu3 li{
+	 background: #83d94a;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid white;
+    width: 150px;
+}
+#submenu3 li:hover{
+    background: #78b43d !important;
+}
+#submenu3 li:hover  a{
+    color:black !important;
+}
+
+
+     </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><img src="https://cdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png">
+            	 <ul id="submenu2">
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Trang chủ 24h</a></li>
+                 
+                    <li>
+                    	<a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Tin tức trong ngày</a>
+                    	<ul  id="submenu3">
+                    		<li><a href="">&emsp;&nbsp;Tin Hà Nội</a></li>
+                    		<li><a href="">&emsp;&nbsp;Tin TP Hồ Chí Minh</a></li>
+                    		<li><a href="">&emsp;&nbsp;Tin Đà Nẵng</a></li>
+                    		<li><a href="">&emsp;&nbsp;Tai nạn giao thông</a></li>
+                    		<li><a href="">&emsp;&nbsp;Tin Cần Thơ</a></li>
+                    		<li><a href="">&emsp;&nbsp;Tin thời tiết</a></li>
+                    		<li><a href="">&emsp;&nbsp;Dự báo thời tiết</a></li>
+                    	</ul>
+                    </li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Bóng đá</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Thế giới</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Thời trang </a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;An ninh xã hội</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Thời trang Hi-tech </a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Tài chính - Bất động sản</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Ẩm thực</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Làm đẹp</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Đời sống showbiz</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Giải trí</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Bạn bè - Cuộc sống</a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Giáo dục - Du học</a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Thể thao</a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Phi thường - Kì quặc</a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Công nghệ thông tin </a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Ô tô</a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Xe máy - Xe đạp</a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Thị trường - Tiêu dùng</a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Du lịch</a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Sức khỏe đời sống</a></li>   
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Video tổng hợp</a></li>   
+                </ul>
+            </li>
+            <li><a href="">Xem danh mục</a></li>
+            <li><a href="">Tin tức quốc tế</a></li>
+            <li>
+                <a href="">Hi-tech</a>
+                <ul id="submenu">
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Dế sắp ra lò</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Tin tức công nghệ</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Mỹ nữ và công nghệ</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Laptop giá rẻ</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Điện thoại</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Máy tính xách tay</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Máy nghe nhạc</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Máy ảnh và camera số</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Các sản phẩm khác</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Thế giới công nghệ</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Máy tính bảng</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Đánh giá sản phẩm</a></li>
+                    <li><a href=""><i class="fa fa-caret-right t" aria-hidden="true"></i>&emsp;&nbsp;Điện tử gia dụng</a></li>   
+                </ul>
+            </li>
+           
+            <li><a href="">Showbiz</a></li>
+            <li><a href="">Giải trí</a></li>
+            <li><a href="">Sống trẻ</a></li>
+            <li><a href="">Thể thao</a></li>
+            <li><a href="">Sức khỏe</a></li>
+            <li><a href="">Video</a></li>
+            <li><a href="">Phái đẹp</a></li>
+            <li><a href="">Game</a></li>
+            <li><a href=""><i class="fa fa-search search" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+</body>
+</html>
