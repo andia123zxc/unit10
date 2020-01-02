@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var  n = prompt("nhập vào n :");
+		for (var i = 0; i < n ; i++) {
+			for (var j = 0; j <= i; j++) {
+				document.write("*");
+			}
+			document.write("<br>");
+		}
+		document.write("<br>");
+		for (var i = 0; i <= n ; i++){
+			for (var j = 0; j <=n; j++) {
+				if (i==0||i==n||j==0||j==n) {
+					document.write("*");
+				}else{
+					document.write("&nbsp")
+				}
+			}
+			document.write("<br>")
+		}
+		document.write("<br>");
+		for (var i = 0; i <=n ; i++){
+			for (var k = 0; k<i; k++) {
+				document.write(" ")
+			}
+		for (var  j= 0; j< n; j++) {
+					document.write("*");
+			}
+			document.write("<br>")
+		}
+		document.write("<br>");
+		for (var i = 0; i <= n; i++) {
+			for (var j = i; j <n; j++) {
+				document.write("*")
+			}
+			document.write("<br>")
+		}
+	</script>
+</body>
+</html>

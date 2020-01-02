@@ -1,20 +1,31 @@
+  
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<title></title>
 </head>
 <body>
 	<script type="text/javascript">
-		var n = window.prompt("Mời bạn nhập giá trị của n: ");
-		var sum =0;
-		for (var i = 1; i < n; i++) {
-			sum += i;
+		
+		var	n = prompt('')
+		do{
+			if (n<0) {
+				document.write("n phải là số dương")
+			}else{
+				document.write("Nhập giá trị n :")
+				document.write(n)
+			}
+		}while(n<0);
+		document.write("<br>")
+		var sum = 0;
+		var i =1;
+		do{
+			sum+=i;
+			i++;	
 		}
+		while(i<=n);
+		document.write("Tổng = 1+2+3+..+n là : "+sum)		
 		
-			document.writeln("Tổng là "+sum);
-		
-
 	</script>
 </body>
 </html>

@@ -5,6 +5,25 @@
 	<title>Document</title>
 </head>
 <body>
-	
+	<script type="text/javascript">
+		var n = prompt("dsd");
+		do{
+			if (n<0) {
+				document.write("N phải là số dương");
+			}else{
+				document.write("Nhập giá trị n :")
+				document.write(n)
+			}
+		}while(n<0);
+		document.write("<br>")
+		var giaithua = 1;
+		var sum= 0;
+		for (var i = 1; i <= n; i++) {
+			giaithua= giaithua*i;
+			sum = 1/giaithua;
+			
+		}
+		document.write("Tổng S = 1/1! + 1/2! + ... + 1/n! là :"+sum)
+	</script>
 </body>
 </html>
