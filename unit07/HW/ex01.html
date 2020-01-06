@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        *{
+            margin: 0 ;
+            padding:0;
+        }
+        .bg{
+            width: 80%;
+            height: 200px;
+            margin: 0 auto;
+            background:  lavender;
+        }
+        .bg>.menu>div{
+            display: inline-block;
+            background: #666666;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding: 1%;
+            color: white;
+        }
+        .menu{
+            background:;
+            padding: 1%; 
+        }
+        #conten{
+            position: absolute;
+            background: white; 
+            width: 60%;
+            left: 10.8%;
+            top: 51px;
+            padding-left: 1%;
+            display: ;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div class="bg">
+        <div class="menu">
+            <div id="tab"><p onclick="Tab1()">Tab 1</p>
+                <div id="conten">      
+                </div>
+            </div>
+            <div id="tab2"><p onclick="Tab2()">Tab 2</p>
+                <div id="conten">      
+                </div>
+            </div>
+
+            <div id="tab3"><p onclick="Tab3()">Tab 3</p>
+                <div id="conten">      
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function Tab1(){
+            document.getElementById("conten").innerHTML="<p><font><b>Section 1</b></font></p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptas corrupti atque quisquam debitis placeat aliquid dignissimos, recusandae aperiam magnam nulla ipsam porro totam fugiat reprehenderit aliquam quis similique ullam.<br /><br /><br />";
+            document.getElementById("tab").style.background ="white";
+            document.getElementById("tab2").style.background = "#666666";
+            document.getElementById("tab3").style.background = "#666666";
+            document.getElementById("tab").style.color ="black";
+            document.getElementById("tab2").style.color ="white";
+            document.getElementById("tab3").style.color ="white";
+            
+        }
+        function Tab2(){
+            document.getElementById("conten").innerHTML="<p><font><b>Section 2</b></font></p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur sequi perspiciatis non sapiente tempora natus! Eligendi id ipsam excepturi, nulla cupiditate accusamus rem recusandae. <br /> <br /> <br />";
+            document.getElementById("tab2").style.background ="white";
+             document.getElementById("tab").style.background = "#666666";
+            document.getElementById("tab3").style.background = "#666666";
+            document.getElementById("tab2").style.color ="black";
+           
+        }
+        function Tab3(){
+            document.getElementById("conten").innerHTML="<p><font><b>Section 3</b></font></p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nisi tenetur, libero nulla quo maxime eum, nam, doloremque reiciendis necessitatibus voluptatibus eligendi cupiditate maiores perspiciatis molestias consequatur ex? Inventore nisi quaerat recusandae aliquam quia earum obcaecati, expedita minus nulla facere. <br /> <br /> <br />";
+            document.getElementById("tab3").style.background ="white";
+            document.getElementById("tab").style.background = "#666666";
+            document.getElementById("tab2").style.background = "#666666";
+            document.getElementById("tab3").style.color ="black";
+        }
+    </script>
+</body>
+</html>

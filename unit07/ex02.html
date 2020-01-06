@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="thep" class="cls_thep">Hello web front end 29</p>
+	<p id="thep2" class="cls_thep">Hello web front end 29</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum rem officia repellendus doloremque maiores, ipsa perspiciatis voluptates dolore molestias ipsum.</p>
+	<script type="text/javascript">
+		console.log(document.getElementById("thep").innerHTML);
+		var thep1 =document.getElementById("thep");
+		thep1.innerHTML="thay đổi text";
+		 var thep02 =document.getElementsByClassName("cls_thep")[1];
+		 thep02.innerHTML = "thay đổi text 2";
+
+		 var thep03 = document.getElementsByTagName('p')[2];
+		 thep03.innerHTML = "Thay đổi text thẻ p3";
+	</script>
+</body>
+</html>
